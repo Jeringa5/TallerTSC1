@@ -8,23 +8,33 @@
         rel="stylesheet" 
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
         crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <div class="container my-4">
-            <h3 class="mb-3">TV Series</h3>
+            <div class="header-bar d-flex align-items-center">
+                <h3 class="m-0 text-white">TV Series</h3>
+              </div>
       
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Channel</th>
-                  <th scope="col">Seasons</th>
-                </tr>
-              </thead>
-              <tbody id="series"></tbody>
-            </table>
-            <p id="seasons-average" class="fw-semibold mb-0"></p>
+            <div class="row g-4">
+                <div class="col-12 col-lg-7">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Channel</th>
+                                <th scope="col">Seasons</th>
+                            </tr>
+                        </thead>
+                        <tbody id="series"></tbody>
+                    </table>
+                    <p id="seasons-average" class="fw-semibold mb-0"></p>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div id="series-detail" class="card shadow-sm" style="display:none;"></div>
+                </div>
+            </div>
         </div>
         <script type="module" src="./scripts/main.js"></script>
     </body>
