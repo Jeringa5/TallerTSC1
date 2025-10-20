@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",               
+    "module": "es6",               
+    "outDir": "./scripts",                        
+    "rootDir": "./",          
+    "strict": true,                
+    "esModuleInterop": true,       
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["./*.ts"]
+}

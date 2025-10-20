@@ -10,24 +10,22 @@
         crossorigin="anonymous">
     </head>
     <body>
-        <div class="container">
-            <br/>
-            <div class="row">
-                <h1 class="nombre">TV SERIES</h1>
-            </div>
+        <div class="container my-4">
+            <h3 class="mb-3">TV Series</h3>
+      
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Channel</th>
+                  <th scope="col">Seasons</th>
+                </tr>
+              </thead>
+              <tbody id="series"></tbody>
+            </table>
+            <p id="seasons-average" class="fw-semibold mb-0"></p>
         </div>
-        <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Channel</th>
-                <th scope="col">Seasons</th>
-              </tr>
-            </thead>
-            <tbody id="series"></tbody>
-          </table>
-          
+        <script type="module" src="./scripts/main.js"></script>
     </body>
-
 </html>
